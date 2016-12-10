@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radio_group"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="@dimen/navigation_bottom_height"
+    android:paddingTop="6dp"
+    android:elevation="6dp"
+    android:background="@android:color/white"
+    android:layout_gravity="bottom"
+    android:paddingBottom="10dp">
 
-</LinearLayout>
+    <RadioButton
+        android:button="@null"
+        android:id="@+id/radio_tab_dialpad"
+        android:text="拨号"
+        android:drawableTop="@drawable/ic_dialpad_black_24dp"
+        android:gravity="center_horizontal"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+    <RadioButton
+        android:button="@null"
+        android:id="@+id/radio_tab_call_record"
+        android:text="通话记录"
+        android:drawableTop="@drawable/ic_call_record_black_24dp"
+        android:gravity="center_horizontal"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+    <RadioButton
+        android:button="@null"
+        android:id="@+id/radio_tab_contacts"
+        android:text="联系人"
+        android:drawableTop="@drawable/ic_contacts_black_24dp"
+        android:gravity="center_horizontal"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+    <RadioButton
+        android:button="@null"
+        android:id="@+id/radio_tab_sms"
+        android:text="短信"
+        android:drawableTop="@drawable/ic_sms_black_24dp"
+        android:gravity="center_horizontal"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+</RadioGroup>
