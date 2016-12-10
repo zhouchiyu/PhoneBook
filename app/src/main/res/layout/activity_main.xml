@@ -4,7 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.jay.phonebook.MainActivity">
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="helloword"/>
     <FrameLayout
         android:id="@+id/fragment_content"
         android:layout_marginBottom="@dimen/navigation_bottom_height"
